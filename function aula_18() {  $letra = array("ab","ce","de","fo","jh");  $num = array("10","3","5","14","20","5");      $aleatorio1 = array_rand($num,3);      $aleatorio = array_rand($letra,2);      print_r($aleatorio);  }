@@ -1,0 +1,558 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Marcos
+ * Date: 03/01/2015
+ * Time: 10:05
+ */
+
+/* Inserindo minha classe e div alternativa sem prescizar digitar ela toda hora */
+
+function tipo_css1(){
+
+    echo "<div class=\"tipo\">";
+
+}
+
+/* Inserindo minha classe e div alternativa sem presicar digitar ela toda hora */
+
+
+/* Fechando minha classe alternativa */
+function tipo_css_fecha1(){
+
+    echo "</div>";
+}
+/* Fechando minha classe alternativa */
+
+
+/** Criando arrays muito fácil pode usar muito o print_r */
+
+function exercicio_(){
+
+
+$ar = array("marcos","adeliane","jose","carlos");
+
+    //for($i=0; $i<4; $i++ ) {
+
+        print_r ($ar);
+
+
+}
+
+
+/** Aula 4 Prenchendo o array  e imprimindo os valores**/
+
+
+function aula_4(){
+
+
+    $dados = range(0,20,2);
+
+    for($i=0; $i<10 ;$i++) {
+
+        echo "Os dados de [" . $i ."] = " . $dados[$i] . "<br/>";
+    }
+
+}
+
+/** Aula 4,5 (Quatro e meio) Prenchendo com string e depois imprimindo **/
+
+
+function aula_4emeio(){
+
+
+    $dados = range("a","z");
+
+    for($i=0; $i<26 ;$i++) {
+
+        echo "Os dados de [" . $i ."] = " . $dados[$i] . "<br/>";
+    }
+
+
+if(is_array($dados)){
+
+   print "<br>" . " É um array ";
+
+}else{
+
+        print "<br>" . "Nâo é um array";
+    }
+
+}
+
+
+/** Aula 5 - adicionando valores em meu array bem legal **/
+
+
+function aula_5(){
+
+    $dias_semana = array("terça","quarta","quinta");
+
+    for($i=0; $i<=2; $i++){
+
+       print_r ("dados[". $i . "] = " . $dias_semana[$i] . "<br>");
+
+
+    }
+
+
+    print "<br/> Novo Array adiciona ná frente <br/><br/>";
+
+    array_unshift($dias_semana,"domingo","amanhã");
+
+
+      for($i=0; $i<=4; $i++){
+
+
+          print_r ("dados[". $i . "] = " . $dias_semana[$i] . "<br>");
+
+      }
+    print "<br/> Novo Array adiciona no final <br/><br/>";
+
+    array_push($dias_semana,"sexta","sabado","Dia extra","Dia extra");
+
+    for($i=0; $i<=4; $i++){
+
+
+        print_r ("dados[". $i . "] = " . $dias_semana[$i] . "<br>");
+
+    }
+
+    print "<br/> Novo Array removendo o inicio  <br/><br/>";
+
+
+    array_shift($dias_semana);
+
+    for($i=0; $i<=4; $i++){
+
+
+        print_r ("dados[". $i . "] = " . $dias_semana[$i] . "<br>");
+
+    }
+
+    print "<br/> Novo Array removendo no fianal ou ultimo <br/><br/>";
+
+
+    array_pop($dias_semana);
+
+    for($i=0; $i<=4; $i++){
+
+
+        print_r ("dados[". $i . "] = " . $dias_semana[$i] . "<br>");
+
+    }
+
+}
+
+
+/** Aula 6 localização de arrays veja como é minha sintaxe ai embaixo in_array() vai usar muito*/
+
+
+function aula_06(){
+
+
+    //Criando o array
+
+    $meses = array("janeiro","fevereiro","março","abril","maio","junho","julho");
+
+    //Criando o array e seus indices
+
+    $datas['janeiro'] = "Datas comemorativas";
+    $datas['fevereiro'] = "Carnaval";
+    $datas['março'] = "Chico Anizio";
+    $datas['maio'] = "Dias das maes";
+    $datas['abril'] = "Meu niver";
+
+    $valor = "dezembro";
+
+         print " O valor que busco é: " . $valor . "<br>" . "<br>";
+
+        print_r ($meses);
+
+//usando o in_aaray()
+
+    if(in_array($valor,$meses)){
+
+
+        print "<br><br>" . "  Este valor existe  " . "<br><br>";
+
+    }else{
+
+        print  "<br><br>" ."  Este valor não existe  " . "<br><br>";
+
+    }
+
+    $chave = "abril";
+
+    print_r ($datas);
+    print "<br><br>" . " Estou procurando este valor " . $chave . " No Array acima " . "<br><br>";
+
+//array_key_exists()
+
+
+    if(array_key_exists($chave,$datas)){
+
+
+    echo "<br/> a chave $chave foi encontrada e possui o valor $datas[$chave] <br/>";
+
+    } else{
+
+
+        echo "<br/> a chave $chave não encontrada";
+
+
+    }
+
+
+
+
+}
+
+/** Valos lá aula 7 Localizando Valores e retornando a chave de um Array **/
+
+
+function aula_07() {
+
+
+    $datas['janeiro'] = "Datas comemorativas";
+    $datas['fevereiro'] = "Carnaval";
+    $datas['março'] = "Chico Anizio";
+    $datas['maio'] = "Dias das maes";
+    $datas['abril'] = "Meu niver";
+
+
+
+
+$localiza = array_search("Dias das maes", $datas);
+
+
+    if($localiza){
+
+
+        print "<br>" . " Encontramos a chave " . $localiza . " cujo o valor é: " . $datas[$localiza] . "<br>";
+    }else{
+
+
+        print "<br>" . " O valor não foi encontrado " . "<br>";
+
+    }
+
+
+}
+
+
+/** Aula 08 - array_heys() - retorna um array consistindo de todas as chaves localizadas em um array */
+/**array_keys(array[mixed,seach_value]) Recupera as chaves**/
+
+function aula_08(){
+
+
+
+
+    $datas["janeiro"] = "Datas comemorativas";
+    $datas["fevereiro"] = "Carnaval";
+    $datas["março"] = "Chico Anizio";
+    $datas["maio"] = "Dias das maes";
+    $datas["abril"] = "Meu niver";
+
+
+
+    $chave = array_keys($datas);
+
+    print_r($datas);
+    print "<br><br>" . " Este array acima "  .  " Com minhas chaves abaixo imprimindo as chaves" ."<br><br>";
+    print_r($chave);
+
+    echo "<hr>";
+
+    print ("Agora vamos imprimir somente os valores sem as chaves" . "<br>");
+
+    $valoresdoarray = array_values($datas);
+
+    print_r($valoresdoarray);
+}
+
+
+/** Aula 09 -  percorendo um array com o parametro key()**/
+
+
+function aula_09(){
+
+    $datas["janeiro"] = "Datas comemorativas";
+    $datas["fevereiro"] = "Carnaval";
+    $datas["março"] = "Chico Anizio";
+    $datas["maio"] = "Dias das maes";
+    $datas["abril"] = "Meu niver";
+
+    echo "Percorendo o array usando a chave key()" . "<br>";
+
+    while($chave=key($datas)) {
+
+        print "$chave" . "<br>";
+        next($datas);
+
+    }
+    echo "<hr>". "<br>";
+
+
+    $data1["janeiro"] = "Datas comemorativas";
+    $data1["fevereiro"] = "Carnaval";
+    $data1["março"] = "Chico Anizio";
+    $data1["maio"] = "Dias das maes";
+    $data1["abril"] = "Meu niver";
+
+
+    echo "Percorendo o valor atual do ponteiro curret()" ."<br />";
+
+    while($chave=current($data1)) {
+
+        print "$chave" . "<br>";
+        next($data1);
+
+    }
+    echo "<hr>". "<br>";
+    echo "Utilizando o  each() " . "<br>";
+
+    $fila= array("Incicio","Meio","Meio mais proximo","Finzão");
+
+    $valores = each($fila);
+
+   print_r ($valores);
+
+
+
+
+}
+
+/** Aula 10 - Mostranado posições de inicio e final de meu array **/
+
+function aula_10(){
+
+
+
+
+    $data1["janeiro"] = "Datas comemorativas";
+    $data1["fevereiro"] = "Carnaval";
+    $data1["março"] = "Chico Anizio";
+    $data1["maio"] = "Dias das maes";
+    $data1["abril"] = "Meu niver";
+
+    $dat["janeiro"] = "Datas comemorativas";
+    $dat["fevereiro"] = "Carnaval";
+    $dat["março"] = "Chico Anizio";
+    $dat["maio"] = "Dias das maes";
+    $dat["abril"] = "Meu niver";
+
+    echo "Imprimindo o registro seguinte <br />";
+    echo "Registro atual : " . $data1['janeiro'] . "<br />" . "<br />";
+    echo "Registro atual : " . next($data1) . "<br>" . "<br>";
+    echo "Registro atual : " . next($data1) . "<br>" . "<br>";
+    echo "Registro atual : " . next($data1) . "<br>" . "<br>";
+    echo "Registro atual : " . next($data1) . "<br>" . "<br>";
+    echo "<hr>" . "Agora vamos imprimir uma posição anterior ao array" . "<br />";
+    echo "Registro atual : " . $data1['abril'] . "<br />" . "<br />";
+    echo "Registro atual :" . prev($data1) . "<br>" . "<br>" ;
+    echo "Registro atual :" . prev($data1) . "<br>" . "<br>" ;
+    echo "Registro atual :" . prev($data1) . "<br>" . "<br>" ;
+    echo "<hr>". "Agora vamos imprimir a primeira posição com next()" . "<br>";
+    echo "Registro atual : " . reset($dat) . "<br>" . "<br>" ;
+    echo  "<hr>"."Agora vamos imprimir na ultima posição com end()" . "<br>" ;
+    echo "Registro atual : " . end($dat) . "<br>" . "<br>" ;
+
+
+
+}
+
+
+/** Aula 11 - Determinando tamanho  de um Array com o count() e depois com o print_r**/
+
+
+
+
+function aula_11(){
+
+
+    $dat["janeiro"] = "Datas comemorativas";
+    $dat["fevereiro"] = "Carnaval";
+    $dat["março"] = "Chico Anizio";
+    $dat["maio"] = "Dias das maes";
+    $dat["abril"] = "Meu niver";
+
+
+       echo     " Conta quantos itens tem em reu array" ;
+    print "<br>" . " Este array tem : " . count($dat) . "<br>" . "<br>";
+        echo "Mostra quantos valores que si repetem em meu array" . "<br>" . "<br>";
+    $quant =  array_count_values($dat);
+
+
+    print_r($quant);
+
+
+
+}
+
+/** Aula 12 - Invertendo os valores do meu array de tráz para frente */
+
+
+function aula_12(){
+
+
+
+$datas = array("Super Cat", "Cavaleiros do Zodiaco", "Tele-Tubes", "Jyrai","Jaspion");
+
+    echo "Meu array como é original " . "<br>" . "<br>" ;
+    print_r($datas);
+    echo "<br>". "<br>"." Agora usando o array_reverse" . "<br>" ."<br>";
+    print_r(array_reverse($datas));
+
+
+}
+
+/**Aula 13 - Ordenando um array com o comando sort()**/
+
+
+function aula_13(){
+
+$numeros = array(1,23,168,1254,36,45,11,89,75,36,45,66);
+
+
+    echo "<br>" . "Meu array original é: " . "<br>" . "<br>";
+
+    print_r($numeros);
+
+    echo "<br>" . "<br>" . "Agora veja meu array ordenado" . "<br>" ."<br>";
+
+
+    sort($numeros);
+    print_r($numeros);
+
+    echo "<br>" . "<br>" . "Agora veja meu array ordenado e conservando a chave:" . "<br>" ."<br>";
+    asort($numeros);
+    print_r($numeros);
+
+    echo "<br>" . "<br>" . "Agora veja meu array ordenado inversamente:" . "<br>" ."<br>";
+    rsort($numeros);
+    print_r($numeros);
+
+
+
+}
+
+/** Aula 14 - organizando um array naturalmente **/
+
+
+function aula_14(){
+
+
+$imagens = array("imagens1.png","imagens5.png","imagens8.png","imagens14.png","imagens11.png","imagens3.png",);
+
+
+    echo "<br>" . "Meu array original é: " . "<br>" . "<br>";
+
+    print_r($imagens);
+
+
+
+    echo "<br>" . "<br>" . "Agora veja meu array ordenado naturalmente" . "<br>" ."<br>";
+
+    natsort($imagens);
+    print_r($imagens);
+
+
+}
+
+/** Aula 15 - unindo arrays com o comando merge */
+
+function aula_15(){
+
+
+$cidades = array("Moc", "Bocaiuva", "Perdigão","Candas Novaas","Gertulho");
+
+$km = array("km 200","km 300", "km 400","km 450","km 600");
+
+    $uniao = array_merge($cidades, $km);
+
+    print_r($uniao);
+
+
+}
+
+/** Aula 16 - Combinando e dividindo Arrays **/
+
+
+function aula_16(){
+
+
+    $abrev = array("mg","sp","rj","es","re");
+
+    $uf = array("Minas Gerais","São Paulo", "rio de Janeiro", "Espirito Santo","Recife");
+
+
+    echo "Meus arrays originais" . "<br>" . "<br>" ;
+
+    print_r($uf);
+
+    echo "<br>" . "<br>";
+
+    print_r($abrev);
+
+    echo "<br>"."<br>" . "combinando os dois arrays" . "<br>" . "<br>";
+
+    $combiaestados = array_combine($abrev,$uf);
+
+    print_r($combiaestados);
+
+
+    echo "<br>" . "<br>" . "Dividindo o array com o numero selecionado" . "<br>" ."<br>";
+
+    $divisao = array_slice($uf, 3);
+    print_r($divisao);
+
+}
+
+/** Aula 17 - Interseção de um  Arrays ***/
+
+
+function aula_17(){
+
+
+$va_1 = array(1,2,3,4,5,6,7,8,9,10);
+
+$va_2 = array(3,19,2,17,18,4,1,6,1);
+
+
+    echo "<br>" . "Este é meu primeiro array" . "<br>" . "<br>";
+
+    print_r($va_1);
+
+    echo "<br>"."Este é meu primeiro array" . "<br>" . "<br>";
+
+    print_r($va_2);
+
+
+     echo "<br>" . "<br>" . "Agora juntando os dois arrays e vendo qual valor estão em cada um" . "<br>"."<br>";
+
+    $intersecao = array_intersect($va_1,$va_2);
+
+    print_r($intersecao);
+
+
+}
+
+
+/** Aula 18 - Valores aleatorios de Array acabou - Ufá finalmente */
+
+
+function aula_18() {
+
+$letra = array("ab","ce","de","fo","jh");
+
+$num = array("10","3","5","14","20","5");
+
+    $aleatorio1 = array_rand($num,3);
+
+    $aleatorio = array_rand($letra,2);
+
+    print_r($aleatorio);
+
+}
