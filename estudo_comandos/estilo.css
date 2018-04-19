@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+	p{
+	text-indent:1000px;
+	
+	}
+
+ 	body{
+	background-color: #CCC;
+	font-size:14px
+	font-weight: bold;*
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #FFF;
+	font-size: 18px;
+	text-indet:50px;
+}

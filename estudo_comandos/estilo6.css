@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Comandos de Posicionameto Relative,
+ Absolute, margin lembrando que o 
+ float só funciona com relative*/
+
+* {
+	margin:0;
+	padding:0;
+
+	}
+.caixa {
+	position:relative;
+	background-color: #FF0000;
+	height: 390px;
+	width: 390px;
+	border: 1px solid #000000;
+	/*top: 0px;*/
+	float:left;
+	margin-right:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#FFFFFF;
+	padding:10px;
+	left: 9px;
+
+		
+}
+
+.caixa2 {
+	position:relative;
+	background-color: #03F;
+	height: 390px;
+	width: 390px;
+	border: 1px solid #000000;
+	/*top: 0px;*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#FFFFFF;
+	padding:10px;
+	/*float:left; para juntar as duas div*/
+	float:left;
+	margin-right:10px;	
+	padding:10px;
+	left: 9px;
+}

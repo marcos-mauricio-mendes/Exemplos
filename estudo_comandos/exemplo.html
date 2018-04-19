@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sem título</title>
+
+<link rel="stylesheet" type="text/css" href="tema.css" />
+
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+<body>
+<div class="nav">
+  <form name="form" id="form">
+    <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+      <option value="calculadora/calculadora.php">Incluir</option>
+      <option>Alterar</option>
+      <option>Excluir</option>
+      <option>Visualizar</option>
+      <option>item1</option>
+    </select>
+  </form>
+  
+</div>
+<div class="container">
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="#">Link um</a></li>
+      <li><a href="#">Link dois</a></li>
+      <li><a href="#">Link três</a></li>
+      <li><a href="#">Link quatro</a></li>
+    </ul>
+    <p> Os links acima demonstram uma estrutura básica de navegação usando uma lista não ordenada com estilo CSS. Use isso como um ponto de partida e modifique as propriedades para produzir uma aparência exclusiva. Se precisar de submenus, crie os seus próprios usando um menu Spry, um menu widget do Exchange da Adobe ou uma variedade de soluções de javascript ou CSS.</p>
+    <p>Caso prefira a navegação ao longo da parte superior, simplesmente mova o ul.nav para o topo da página e crie o estilo novamente.</p>
+  <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1>Instruções</h1>
+    <p>Saiba que o CSS para esses layouts é altamente comentado. Se fizer a maior parte do seu trabalho na visualização Design, olhe o código para obter dicas sobre como trabalhar com o CSS para os layouts fixos. Você pode remover esses comentários, antes de lançar o site. Para saber mais sobre as técnicas usadas nesses layouts de CSS, leia este artigo no Centro do Desenvolvedor da Adobe - <a href=http://www.adobe.com/go/adc_css_layouts">http://www.adobe.com/go/adc_css_layouts</a>."</p>
+    <h2>Limpeza</h2>
+    <p>Como todas as colunas são flutuantes, esse layout usa o overflow:hidden no contêiner. Essa técnica de limpeza força o contêiner a reconhecer onde as colunas terminam para mostrar quaisquer bordas ou cores de fundo que você tenha colocado. Se houver um elemento muito grande que sobressaia o contêiner, ele aparecerá cortado. Também não é possível usar margens negativas ou posicionamento absoluto com valores negativos para deixar elementos do lado de fora do contêiner ou eles também não serão exibidos fora do contêiner.</p>
+    <p>Se precisar usar essas propriedades, será necessário utilizar um método de limpeza diferente. O mais confiável é adicionar um &lt;br class="clearfloat" /&gt; or &lt;div class="clearfloat"&gt;&lt;/div&gt; após a última coluna flutuante, mas antes do fechamento do contêiner. Isso dará o mesmo efeito de limpeza.</p>
+    <h3>Rodapé</h3>
+    <p>Ao adicionar um rodapé após as colunas, porém ainda dentro do contêiner, causará uma falha no método de limpeza de overflow:hidden. É possível colocar um rodapé em um segundo contêiner do lado de fora do primeiro sem causar danos. A escolha mais simples é iniciar com um layout contendo cabeçalhos e rodapés e remover o cabeçalho para utilizar os métodos de limpeza naquele tipo de layout.</p>
+    <h4>Fundos</h4>
+    <p>A princípio, a cor de fundo em qualquer div somente será exibida para o comprimento do conteúdo. Isso significa que se estiver usando uma cor de fundo ou margem para criar uma aparência de uma coluna lateral, não ocorrerá a extensão até o rodapé e indo somente até o final do conteúdo. Se o .content div tiver sempre mais conteúdo, é possível colocar uma margem no .content div para dividi-lo da coluna.</p>
+    <!-- end .content --></div>
+<!-- end .container --></div>
+</body>
+</html>
