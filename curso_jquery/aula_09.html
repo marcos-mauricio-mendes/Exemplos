@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt_br">
+    <meta charset="UTF-8">
+    <title>Aula - 09</title>
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+    <script type="text/javascript" src="js/aula_09.js" ></script>
+    <style>
+
+        fieldset {
+
+            margin: 0 auto;
+            width: 400px;
+            border: 1px solid;
+            background-color: #4f98af;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<fieldset>
+    <legend>Formulário</legend>
+    Text:  <input type="text" max="40" name="texto" id="texto" placeholder="Internalta"><br /><br />
+    Radios <input type="radio" name="sexo" value="M" />Maculino
+           <input type="radio" name="sexo" value="F" />Femilino<br /><br />
+
+    Password: <input type="password" name="senha" placeholder="Sua senha"><br /><br />
+    Chekbox: <input type="checkbox" name="conhecimento" value="JAVA" />Java
+             <input type="checkbox" name="conhecimento" value="HTML" />HTML
+             <input type="checkbox" name="conhecimento" value="CSS" />CSS
+    <br /><br />
+
+    Select:  <select id="pais">
+             <option value="BR">Brasil</option>
+             <option>Argentina</option>
+             <option>Chile</option>
+             <option>Uruguai</option>
+             <option>Paraguai</option>
+    </select>
+    <br /><br />
+    File:   <input type="file" id="curriculo" /> <br />
+    <br />Textarea <br />
+<textarea id="textoarea" rows="6" cols="40">Escreva aqui</textarea><br />
+
+
+<button>Submit</button>     <button id="muda">Reset</button>    <button>Button</button>
+</fieldset>
+
+
+
+</body>
+</html>

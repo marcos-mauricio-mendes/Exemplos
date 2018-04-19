@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+fieldset{
+    width: 400px;
+    margin: 0 auto;
+
+}
+
+textarea {
+
+    width: 450px;
+    height: 200px;
+    border: 1px solid coral;
+}
+button {
+
+    width: 450px;
+    height: 50px;
+    border: 1px salmon;
+}
+.centro {
+
+    border: 4px solid #1c2c66;
+
+}
+button:hover{
+
+    background: salmon;
+
+}
+.centro:hover{
+
+    background: antiquewhite;
+}
