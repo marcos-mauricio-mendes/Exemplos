@@ -1,0 +1,35 @@
+<!--Aula 10 exercicio de case calcula o que foi pedido no enunciado na questão-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Exercicio de Case</title>
+    <meta charset="utf-8">
+	
+	</head>
+<body>
+
+<p>Calcula o valor nás opçôes abaixo</p>
+<div>
+<form method="post" action="exec1.php">
+
+Numero: <input type="number" name="num" /> <br /> <br />
+
+<fieldset><legend>Operacao</legend>
+
+	<input type="radio" name="oper" id="dobro" value="1" checked />
+	<label for="dobro">Dobro</label>
+	<input type="radio" name="oper" id="cubo" value="2" />
+	<label for="cubo">Cubo</label>
+	<input type="radio" name="oper" id="raiz" value="3" />
+	<label for="raiz">Raiz Quadrada</label>
+
+</fieldset>
+
+<input type="submit" value="Calcular" />
+
+</form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Formulario PHP Avançado</title>
+    <meta charset="utf-8">
+	
+	</head>
+<body>
+<form method="post" action="idade.php">
+
+	Nome:<input type="text" name="nome" />
+	Ano de Nascimento:<input type="number" name="ano" /><br>
+	<fieldset><legend>sexo</legend>
+		<input type="radio" name="sexo" id="masc" value="homem" checked />
+		<label for="masc">Masculino</label><br/>
+		<input type="radio" name="sexo" id="fem" value="mulher"/>
+		<label for="fem">Feminino</label>
+	</fieldset>
+	<input type="submit" value="Enviar" />
+
+</form>
+
+</body>
+</html>
