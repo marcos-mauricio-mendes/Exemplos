@@ -1,17 +1,4 @@
-<!-Logando no Banco-->
-<?php
-
-
-$host = "localhost";
-$user = "root";
-$pass = "";
-$banco = "cadastro1";
-$conexao = mysql_connect($host, $user, $pass) or die(mysql_error());
-mysql_select_db($banco) or die(mysql_error());
-
-?>
-<!-Logando no Banco-->
-<html>
+﻿<html>
 <head>
 <title>Autenticacao de Usuario</title>
 <meta charset="utf-8">    
@@ -36,11 +23,14 @@ mysql_select_db($banco) or die(mysql_error());
 </head>
 <body>
 <?php
+//Logando no Banco
+include "coneccao.php";
+//Logando no Banco
 
-$mail = $_POST['email'];
+$email = $_POST['email'];
 $senha = $_POST['senha'];
 
-$sql = mysql_query("SELECT * FROM usuarios WHERE email = '$email' and senha ='$senha'") or die(mysql_error());
+$sql = mysql_query(" SELECT * FROM usuario WHERE email = '$email' and senha = '$senha' ") or die(mysql_error());
 $row = mysql_num_rows($sql);
 
 if($row > 0){

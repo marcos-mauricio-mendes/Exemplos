@@ -1,0 +1,13 @@
+Este sistema funciona criando a sessção e destruido a sessção com o comando session_start() e session_destroy().
+
+
+1 -Copie os arquivos para seu sistema
+-----------------------------------------------------------------------------------
+2 -Primeiro crie um banco de dados com nome cadastro1 ou utilize seu banco altere o arquivo conecção.php.
+3 -Depois abra autenticar.php e altere a tabela onde vai ser realizada a pesquisa dos dados nome e senha no meu caso é usuario.
+4 -Altere o javascript como os edereços que achar melhor mas tenha em mente que painel.php é minha área restrita.
+5 -Depois altere sua pagina onde vai ter uma sesção restrita em meu site painel tem um script php copie e cole em sua área restrita.
+
+Pronto já está funcionado!
+
+link dá video aula https://www.youtube.com/watch?v=-yUMdFWrPJc
