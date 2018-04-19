@@ -1,0 +1,63 @@
+<?php 
+
+
+$VA1 = $_GET[ "VALOR1"];
+$VA2 = $_GET[ "VALOR2"];
+$ESCOLHA = $_GET[ "CAL"];
+$RESULTADO = "0";
+
+
+if( $VA1 == 0 || $VA2 == 0){
+	echo "DIGITE OS VALORES A SEREM CALCULADOS";
+}else{
+switch ($ESCOLHA) {
+
+case 1 : $RESULTADO = $VA1+$VA2;
+	break;
+case 2 : $RESULTADO = $VA1-$VA2;
+	break;
+case 3 : $RESULTADO = $VA1*$VA2;
+	break;
+case 4 : $RESULTADO = $VA1/$VA2;
+	break;
+//	default : $RESULTADO = 0 " Não foi encontrado o valor ";
+}
+}
+?>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+.tema {
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 36px;
+	background-attachment: fixed;
+	background-color: #CCC;
+	background-position: 0cm 0px;
+}
+</style>
+</head>
+<body>
+<p class="tema">
+  <?php $datahora = $datahora = date("d/m/Y h:i:s");;
+	$ip = $_SERVER['REMOTE_ADDR'];
+   echo  "Data e a hora atual $datahora <br> Servidor $ip";  
+	 ?>
+</p>
+<p class="tema">RESULTADO</p>
+<table width="268" height="140" border="1" align="center" cellpadding="2">
+  <tr>
+    <td colspan="2" bgcolor="#FFCCFF" class="tema"><?php echo $RESULTADO  ?>&nbsp;</td>
+  </tr>
+</table>
+<p>
+</p>
+<p>&nbsp;</p>
+</body>
+</html>
+
