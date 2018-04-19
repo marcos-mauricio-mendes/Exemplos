@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+.btn-home {
+	background-image: url("../img/btn_home.gif");
+	height: 22px;
+	width: 144px;
+	color: #000;
+	border: 1px solid #ccc;
+	display: inline-block;
+	line-height: 22px;
+	text-align: center;
+	font-size: 1.2em;
+	text-decoration: none;
+	margin: 0 0 0 1px;
+}
+
+/*a.btn-home:visited {
+	text-decoration:underline;
+	background-image:url("../img/btn_box_active.gif");
+}*/
+a.btn-home:hover { /*text-decoration:underline;*/
+	background-image: url("../img/btn_home_hover.gif");
+	text-decoration: none;
+}
+
+a.btn-home:active { /*text-decoration:underline;*/
+	background-image: none;
+	background-color: #DEDEDE;
+}
+
+/*Botões com o nível de importância número 1 (Salvar, Enviar, Próximo... - sempre relacionados a principal função da página)*/
+.btn1 {
+	background: #104E8B url("../img/btn_1.png");
+	height: 20px;
+	min-width: 75px;
+	color: #FFFFFF;
+	display: inline-block;
+	line-height: 19px;
+	text-align: center;
+	font-size: 1.1em;
+	text-decoration: none;
+	margin: 0 0 0 1px;
+	cursor: pointer;
+	padding: 0 10px 0 10px;
+}
+
+.contentform div.btnform a.btn1 {
+	color: #fff;
+}
+
+a.btn1:visited { /*text-decoration:underline;*/
+	background: #104E8B url("../img/btn_1.png");
+}
+
+a.btn1:hover { /*text-decoration:underline;*/
+	height: 18px;
+	width: 73px;
+	border: 1px solid #FBB117;
+	background: #104E8B url("../img/btn_hover_1.png");
+	text-decoration: none;
+}
+
+a.btn1:active { /*text-decoration:underline;*/
+	background: red url("../img/btn_hover_1.png");
+}
+
+/*Botões com o nível de importância número 2 (Qualquer botão que esteja posicionado ao lado dos botões de importância número 1 - barra de botões)*/
+.btn2 {
+	background: #104E8B url("../img/btn_2.png");
+	height: 20px;
+	/*min-width: 75px;*/
+	color: #FFFFFF;
+	display: inline-block;
+	line-height: 19px;
+	text-align: center;
+	font-size: 1.1em;
+	text-decoration: none;
+	margin: 0 0 0 1px;
+	cursor: pointer;
+	padding: 0 10px 0 10px;
+}
+
+.contentform div.btnform a.btn2 {
+	color: #fff;
+}
+
+.btn2:visited { /*text-decoration:underline;*/
+	background: #104E8B url("../img/btn_2.png");
+}
+
+.btn2:hover { /*text-decoration:underline;*/
+	height: 20px;
+	border: 1px solid #FBB117;
+	background: #104E8B url("../img/btn_hover_2.png");
+	text-decoration: none;
+}
+
+.btn2:active { /*text-decoration:underline;*/
+	background: #104E8B url("../img/btn_hover_2.png");
+}
+
+/*Botões com o nível de importância número 3 (Botões posicionados dentro dos formulários, ao lado dos campos.)*/
+.btn3 {
+	background: #104E8B url("../img/btn_3.png");
+	height: 20px;
+	width: 75px;
+	color: #FFFFFF;
+	display: inline-block;
+	line-height: 19px;
+	text-align: center;
+	font-size: 1.1em;
+	text-decoration: none;
+	margin: 0 0 0 1px;
+	cursor: pointer;
+}
+
+.contentform div.btnform a.btn3 {
+	color: #fff;
+}
+
+a.btn3:visited { /*text-decoration:underline;*/
+	background: #104E8B url("../img/btn_3.png");
+	color: #fff;
+}
+
+a.btn3:hover { /*text-decoration:underline;*/
+	height: 18px;
+	width: 73px;
+	line-height: 17px;
+	border: 1px solid #FBB117;
+	background: #104E8B url("../img/btn_hover_3.png");
+	text-decoration: none;
+}
+
+a.btn3:active { /*text-decoration:underline;*/
+	background: #104E8B url("../img/btn_hover_3.png");
+}
