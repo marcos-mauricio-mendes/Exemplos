@@ -37,7 +37,7 @@ if($row > 0 ){
         
         }
       }else {
-            echo "Nome Invalido tenete Marcos";      
+            echo "Nome Invalido tente Marcos";      
         
         }
 ?>
