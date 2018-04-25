@@ -1,8 +1,8 @@
 <?php 
 // Data de Criação 23 - 04 - 2018
 // O script feito para receber os dados do formulário da pagina index.php
-// Partindo desde principio podemos calcular o tempo e ou a media de locoloção de Contagem - Mg para o Orion Bairro Bom Fim.
-//	default : $RESULTADO = 0 " Irá caregar um valor nulo ";
+// Partindo desde principio podemos calcular o tempo e ou a media de locomoção de Contagem - Mg para o Orion Bairro BomFim - Bh.
+//	default : $RESULTADO = 0 " Irá carregar um valor nulo ";
 
 
 $VA1 = $_GET[ "APE_CASA"];
