@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Bevan);
+
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+
+    margin: 0 auto;
+    border: solid 3px #006699;
+    width: 600px;
+    font-family: 'Bevan', cursive;
+    font-size: 16px;
+    background-color: #66ccff;
+
+}
+
+input {
+
+    width: 200px;
+    height: 20px;
+    background-color:#ffffff;
+
+}
+
+button{
+
+    width: 170px;
+    height: 50px;
+    background: #006699;
+    border: solid 1px #000000;
+    font-family: 'Bevan', cursive;
+    margin: 0 auto;
+
+}
+
+p{
+    text-align: center;
+    color: #333333;
+    border: solid 1px #006699;
+    background-color: #f4f4f4;
+
+
+
+}

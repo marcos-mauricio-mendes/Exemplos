@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt_br">
+    <meta charset="UTF-8">
+    <title>Exercicio de Video</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-color:#003366;
+        }
+
+        #a1 {
+
+            width: 0 auto;
+            height: 600px;
+            background-color: #cccccc;
+            position: relative;
+        }
+
+        #b1 {
+
+            width: 0 auto;
+            height: 600px;
+            margin: 0 auto;
+            margin-top: 5px;
+            background-color: #4f98af;
+            padding: 0;
+
+
+        }
+        #filme {
+
+            width: 0 auto;
+            height: 600px;
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        p {text-align: center; margin: 0; padding: 0;}
+        #c1 {
+
+            width: 0 auto;
+            height: 600px;
+            margin-top: 10px;
+            background-color: #006699;
+            position: relative;
+
+        }
+
+
+    </style>
+
+    <script>
+        function playPause(){
+
+            if(video.paused) video.play();
+            else video.pause();
+        }
+        function grande(){
+            /*altera a largura da tag, automaticamente a altura é alterada porporcionalmente */
+
+            video.width=560; }
+
+        function pequeno(){
+
+            /*altera a largura da tag, automaticamente a altura é alterada porporcionalmente */
+
+            video.width=320;
+        }
+
+        function normal(){
+
+            /*altera a largura da tag, automaticamente a altura é alterada porporcionalmente */
+
+            video.width=420;
+        }
+
+    </script>
+
+
+</head>
+<body>
+
+<div id="a1">
+
+<p>a1</p>
+</div>
+<div id="b1">
+    <p><video id="filme" controls="controls" autoplay="autoplay" loop="loop">
+        <source src="getting-started.mp4" type="video/mp4">
+        Desculpe, mas não foi possivel carregar o video.
+    </video></p>
+</div>
+
+<div id="c1">
+<p>c1</p><button onclick="playPause()">Click Agui</button>
+</div>
+
+</body>
+</html>

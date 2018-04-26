@@ -1,0 +1,204 @@
+/*Estou importando uma fonte muito loca*/
+
+@import url(http://fonts.googleapis.com/css?family=Bangers);
+/*estou importando outra fonte muito loca */
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+/* outra font muito loca
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+
+/* Delimentando o formato do meu section*/
+section  {
+
+    margin: 0 auto;
+    width: 100%;
+    background: url("back_all.gif") repeat-x center;
+
+}
+
+/*formatando meu cabeçalho*/
+header {
+    background: url(../estilo/php.png) no-repeat center;
+    padding: 170px;
+
+}
+
+header h1 {
+
+
+    display: block;
+    margin: 10px;
+    float: right;
+    font-family: 'Bangers', cursive;
+    color: black;
+}
+
+
+header h1:hover {
+
+    color: crimson;
+
+}
+/*Barra de navegação bem simples*/
+nav {
+    float: left;
+    width: 100%;
+    background: url("back_all.gif") repeat-x center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav li a {
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+
+nav li a:hover {
+    background: crimson;
+}
+
+/*Formatando meu artigo*/
+
+article {
+    float: left;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+ h1 {
+
+     font-family: 'Poiret One', cursive;
+    margin: 0;
+     font-size: 80px;
+}
+ h2, h3, h4 {
+
+     font-family: 'Poiret One', cursive;
+     margin: 0;
+
+ }
+
+#content
+{
+    clear: left;
+    float: left;
+    width: 60%;
+    padding: 20px 0;
+    margin: 0 0 0 4%;
+    display: inline;
+    background-color: aliceblue;
+}
+
+#content h2 { margin: 0; }
+
+/*Formatando meu aside deixando ele do lado direito*/
+
+aside {
+    float: right;
+    width: 26%;
+    padding: 20px 0;
+    margin: 0 3% 0 0;
+    display: inline;
+    background-color: lavender;
+
+}
+
+aside h2 {
+
+    margin: 0;
+    font-family: 'Bangers', cursive;
+}
+
+
+footer {
+    float: left;
+    width: 0 auto;
+
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+footer li a {
+    display: block;
+    float: left;
+    padding: 2px 10px;
+    color: black;
+
+
+
+}
+
+footer li a:hover {
+    background: crimson;
+    color: aquamarine;
+}
+
+
+
+footer {
+
+    clear: left;
+    background: url("back_all.gif") repeat-x center;
+    padding: 10px;
+    height: 1%;
+    text-align: center;
+}
+
+button {
+
+    background: url("back_all.gif") repeat-x center;
+}
+
+.tipo {
+
+    color: cornflowerblue;
+    font-family: 'Poiret One', cursive;
+    /**font-family: 'Bangers', cursive;**/
+    font-size: 16px;
+    border: 1px cornflowerblue solid;
+    text-align: center ;
+    padding: 10px;
+
+
+}
+
+.tipo a:hover{
+
+    font-size: 100px;
+
+}
+
+
+span {
+
+    color: cornflowerblue;
+    font-family: 'Righteous', cursive;
+    font-size: 12px;
+
+
+}
+
+tr  {
+
+    border: 10px solid;
+}

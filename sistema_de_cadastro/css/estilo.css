@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #eee;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #888;
+}
+.limpar{
+
+    clear: both;
+
+}
+.conteudo{
+
+        background: red;
+        width: 960px;
+        margin: 25px auto;
+
+}
+
+.topo{
+
+    background: blue;
+    height: 110px;
+    padding: 20px;
+
+}
+
+.menu{
+
+    background: yellow;
+    width: 200px;
+    float:left;
+
+}
+
+.meio{
+    background: greenyellow;
+    width: 730px;
+    float:left;
+
+}
+
+.rodape{
+    background: orange;
+    height: 95px;
+
+
+}

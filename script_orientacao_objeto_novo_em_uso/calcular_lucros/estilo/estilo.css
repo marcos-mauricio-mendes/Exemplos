@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+html {
+
+    text-align: center;
+}
+h1{
+    font-size: 80px;
+
+}
+strong{
+    font-size: 48px;
+
+}
+span {
+
+    color: #FF0000;
+
+}
+#azul {
+    color: #1c2c66;
+}
+#fundo {
+
+    background-color: antiquewhite;
+}
+
