@@ -1,0 +1,25 @@
+body {
+			
+            padding: 10px;
+	        background: linear-gradient(267deg, #F2F7F7 0, #F3F5FF 0, #D1DDFF 0);/* W3C */
+		
+
+}
+
+#formas{
+	
+	width: 1024px;
+	height: 100%;
+	margin: 0 auto;
+	
+	
+
+}
+.videofundo{
+
+ 		
+           width: 1024px;
+           height:768px;
+           margin: 0 auto;
+          
+}
