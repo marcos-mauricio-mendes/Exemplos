@@ -28,7 +28,7 @@ class conecta_com_Mysql {
 
     }
 
-    // Função conecção com o banco a variável conexão vai receber os dados para conecxão
+    // Função conecção com o banco a variável conexão vai receber os dados para coneção
 
     function conectar(){
 
